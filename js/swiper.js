@@ -1,47 +1,98 @@
-const headSwiper = new Swiper('.idc-swiper', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
+const swiper1 = new Swiper('.idc-swiper-1', {
+    // Default parameters
+    loop: false,
+    direction: "horizontal",
+    slidesPerView: 1,
+    spaceBetween: 25,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+    touchReleaseOnEdges: true,
+    allowTouchMove: true,
+    /*    grabCursor: true, */
+    watchOverflow: true,
     grabCursor: true,
 
-    // Default parameters
-    slidesPerView: 1.3,
-    spaceBetween: 15,
-
-
-    breakpoints: {
-        // when window width is >= 320px
-        320: {
-            slidesPerView: 1.3,
-            spaceBetween: 15
-        },
-        414: {
-            slidesPerView: 1.7,
-            spaceBetween: 15
-        },
-        // when window width is >= 480px
-        576: {
-            slidesPerView: 2,
-            spaceBetween: 15
-        },
-
-        768: {
-            slidesPerView: 3,
-            spaceBetween: 15
-        },
-        1250: {
-            slidesPerView: 3,
-            spaceBetween: 25
-        },
-        // when window width is >= 640px
-
+    pagination: {
+        el: ".idc-swiper-1 .idc-swiper-pagination",
+        type: "bullets",
+        clickable: true,
     },
-
-    // Navigation arrows
     navigation: {
-        nextEl: '.idc-head__swiper-button-next',
-        prevEl: '.idc-head__swiper-button-prev',
+        nextEl: ".idc-swiper-1 .idc-swiper-button-next",
+        prevEl: ".idc-swiper-1 .idc-swiper-button-prev",
     },
+});
 
+const swiper2 = new Swiper('.idc-swiper-2', {
+    // Default parameters
+    loop: false,
+    direction: "horizontal",
+    slidesPerView: 1,
+    spaceBetween: 25,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+    touchReleaseOnEdges: true,
+    allowTouchMove: true,
+    /*    grabCursor: true, */
+    watchOverflow: true,
+    grabCursor: true,
 
+    pagination: {
+        el: ".idc-swiper-2 .idc-swiper-pagination",
+        type: "bullets",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".idc-swiper-2 .idc-swiper-button-next",
+        prevEl: ".idc-swiper-2 .idc-swiper-button-prev",
+    },
+});
+
+const swiperAbout = new Swiper('.idc-swiper-3', {
+    // Default parameters
+    loop: false,
+    direction: "horizontal",
+    slidesPerView: 1,
+    spaceBetween: 25,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+    touchReleaseOnEdges: true,
+    allowTouchMove: true,
+    /*    grabCursor: true, */
+    watchOverflow: true,
+    grabCursor: true,
+
+    pagination: {
+        el: ".idc-swiper-3 .idc-swiper-pagination",
+        type: "fraction",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".idc-swiper-3 .idc-swiper-button-next",
+        prevEl: ".idc-swiper-3 .idc-swiper-button-prev",
+    },
+});
+const swiperProgs = new Swiper('.idc-swiper-4', {
+    // Default parameters
+    loop: false,
+    direction: "horizontal",
+    slidesPerView: 1,
+    spaceBetween: 25,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+    touchReleaseOnEdges: true,
+    allowTouchMove: true,
+    /*    grabCursor: true, */
+    watchOverflow: true,
+    grabCursor: true,
+
+    pagination: {
+        el: ".idc-swiper-4 .idc-swiper-pagination",
+        type: "fraction",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".idc-swiper-4 .idc-swiper-button-next",
+        prevEl: ".idc-swiper-4 .idc-swiper-button-prev",
+    },
 });
