@@ -36,7 +36,7 @@ const swiper2 = new Swiper('.idc-swiper-2', {
     /*    grabCursor: true, */
     watchOverflow: true,
     grabCursor: true,
-
+    autoheight: true,
     pagination: {
         el: ".idc-swiper-2 .idc-swiper-pagination",
         type: "bullets",
