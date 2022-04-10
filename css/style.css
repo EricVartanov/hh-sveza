@@ -331,6 +331,10 @@ body {
 }
 
 /* ********about******* */
+.idc-about {
+    position: relative;
+    z-index: 2;
+}
 .idc-about .idc-container {
     padding-bottom: 150px;
     position: relative;
@@ -375,6 +379,7 @@ body {
 .idc-about .idc-more .idc-img > img {
     display: none;
 }
+
 .idc-about .idc-more {
     opacity: 0;
     visibility: hidden;
@@ -665,6 +670,10 @@ body {
 }
 
 /* ********progs******* */
+.idc-progs {
+    position: relative;
+    z-index: 2;
+}
 .idc-progs .idc-container {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -690,7 +699,8 @@ body {
     bottom: 0;
     width: 100%;
 }
-.idc-progs .idc-circles-768 {
+.idc-progs .idc-circles-768,
+.idc-progs .idc-circles-mobile {
     display: none;
 }
 .idc-progs .idc-text-block {
@@ -742,6 +752,9 @@ body {
 .idc-more .idc-img-block {
     width: 442px;
     position: relative;
+}
+.idc-progs .idc-more .idc-img > img {
+    display: none;
 }
 .idc-more .idc-circles {
     position: absolute;
@@ -927,6 +940,12 @@ body {
     transition: opacity 0.5s ease, max-height 0.8s ease-in;
     background: #ffffff;
     padding-right: 5px;
+}
+.idc-button-wrapper.open .idc-button {
+    -webkit-transition: opacity 0.5s ease, max-height 0.8s ease-in;
+    -o-transition: opacity 0.5s ease, max-height 0.8s ease-in;
+    transition: opacity 0.5s ease, max-height 0.8s ease-in;
+    color: #7baf00;
 }
 .idc-burger__list::-webkit-scrollbar {
     width: 7px;
