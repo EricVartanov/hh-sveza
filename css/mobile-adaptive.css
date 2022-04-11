@@ -1072,9 +1072,11 @@
     .idc-about .idc-more .idc-img > img {
         display: none;
     }
-    .idc-about .idc-more .idc-h1 {
+    .idc-about .idc-more .idc-h1,
+    .idc-more .swiper-slide:nth-child(5) .idc-h1 {
         max-width: 220px;
     }
+   
     .idc-about .idc-more .idc-h1 + .idc-text-4 {
         max-width: 100%;
     }

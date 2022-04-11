@@ -416,6 +416,7 @@ body {
     position: absolute;
     top: 30px;
     right: 30px;
+    z-index: 5;
 }
 .idc-more .idc-img-block {
     width: 442px;
