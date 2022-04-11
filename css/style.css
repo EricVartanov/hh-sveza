@@ -862,6 +862,7 @@ body {
 .idc-swiper-2 .swiper-slide:nth-child(5) .idc-text-5 {
     max-width: 660px;
     margin-top: 25px;
+    font-size: 17px;
 }
 .idc-swiper-2 .swiper-slide:nth-child(5) .idc-text-6 {
     max-width: 358px;
