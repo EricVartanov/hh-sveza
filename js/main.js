@@ -22,8 +22,28 @@ for (let smoothLink of smoothLinks) {
 }
 
 // открытие и закрытие "подробнее"
+// function openCloseMore() {
+//     const openBtns = document.querySelectorAll(".idc-open-btn");
+//     for (let openBtn of openBtns) {
+//         openBtn.addEventListener("click", function (e) {
+//             e.preventDefault();
+//             let id = openBtn.getAttribute("href");
+//             let moreParent = document.querySelector(id);
+//             let more = moreParent.querySelector(".idc-more");
+//             let closeBtns = more.querySelector(".idc-close-btn");
+
+//             if (!more.classList.contains("open")) {
+//                 more.classList.add("open");
+//                 closeBtns.addEventListener("click", function () {
+//                     more.classList.remove("open");
+//                 });
+//             }
+//         });
+//     }
+// }
+// открытие и закрытие "подробнее"
 function openCloseMore() {
-    const openBtns = document.querySelectorAll(".idc-open-btn");
+    let openBtns = document.querySelectorAll(".idc-open-btn");
     for (let openBtn of openBtns) {
         openBtn.addEventListener("click", function (e) {
             e.preventDefault();
@@ -40,15 +60,64 @@ function openCloseMore() {
             }
         });
     }
+    window.addEventListener("click", (e) => {
+        // при клике в любом месте окна браузера
+        const target = e.target; // находим элемент, на котором был клик
+        if (
+            !target.closest(".idc-more") &&
+            !target.closest(".idc-close-btn") &&
+            !target.closest(".idc-open-btn")
+        ) {
+            let moreOpen = document.querySelector(".idc-more.open");
+            if (moreOpen) {
+                moreOpen.classList.remove("open");
+            }
+        }
+    });
 }
-
 // открытие и закрытие "списков вакансий"
+// function openCloseVacancy() {
+//     const burgerBtns = document.querySelectorAll(".idc-btn-burger");
+//     for (let burgerBtn of burgerBtns) {
+//         burgerBtn.addEventListener("click", function (e) {
+//             e.preventDefault();
+//             burgerBtn.classList.toggle("open");
+//         });
+
+//     }
+// }
+// открытие и закрытие "списков вакансий" и выбор городов
 function openCloseVacancy() {
     const burgerBtns = document.querySelectorAll(".idc-btn-burger");
     for (let burgerBtn of burgerBtns) {
         burgerBtn.addEventListener("click", function (e) {
             e.preventDefault();
             burgerBtn.classList.toggle("open");
+        });
+    }
+    window.addEventListener("click", (e) => {
+        // при клике в любом месте окна браузера
+        const target = e.target; // находим элемент, на котором был клик
+        if (
+            !target.closest(".idc-burger") &&
+            !target.closest(".idc-btn-burger")
+        ) {
+            for (let burgerBtn of burgerBtns) {
+                burgerBtn.classList.remove("open");
+            }
+        }
+    });
+
+    const vacancyNames = document.querySelectorAll(
+        ".idc-burger__item .idc-text-6"
+    );
+
+    for (let vacancyName of vacancyNames) {
+        vacancyName.addEventListener("click", function () {
+            let btnName = document.querySelector(".idc-btn-burger.open .idc-btn-text");
+            btnName.textContent = ''
+            btnName.textContent = vacancyName.textContent;
+            console.log(btnName);
         });
     }
 }

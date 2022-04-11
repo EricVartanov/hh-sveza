@@ -598,7 +598,9 @@ body {
 .idc-location .idc-bottom .idc-count .idc-text-4 {
     margin-top: 5px;
 }
-
+.idc-location .idc-content.idc-4 .idc-count:last-child .idc-text-4 {
+    max-width: 250px;
+}
 .idc-location .idc-map {
     position: absolute;
     left: 0;
@@ -882,7 +884,7 @@ body {
 }
 .idc-vacancy .idc-buttons-block {
     margin-top: 40px;
-    max-width: 1075px;
+    max-width: 1166px;
 }
 .idc-vacancy .idc-button-wrapper {
     margin-top: 20px;
@@ -902,19 +904,36 @@ body {
     line-height: 22px;
     text-transform: uppercase;
     width: auto;
+    height: 54px;
 }
 .idc-vacancy .idc-all,
 .idc-vacancy .idc-years {
     position: relative;
 }
-.idc-years .idc-button,
-.idc-all .idc-button {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+.idc-vacancy .idc-all {
+    width: 300px;
+}
+.idc-vacancy .idc-years {
+    width: 228px;
+}
+.idc-years .idc-button .idc-dawn,
+.idc-all .idc-button .idc-dawn {
+    position: absolute;
+    top: 43%;
+    right: 25px;
+}
+.idc-years .idc-button .idc-btn-text,
+.idc-all .idc-button .idc-btn-text {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 25px;
+    white-space: nowrap;
+    text-align: left;
+    width: 70%;
+    overflow: hidden;
 }
 .idc-burger {
     position: absolute;

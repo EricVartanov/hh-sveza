@@ -478,10 +478,10 @@
         border: 4px solid #000000;
     }
     .idc-about .idc-more .idc-h1 + .idc-text-4 {
-        margin-top: 15px;
+        margin-top: 10px;
         font-size: 14px;
         line-height: 17px;
-        max-width: 433px;
+        max-width: 463px;
     }
     .idc-swiper-3 .idc-swiper-pagination {
         left: 50%;
@@ -579,8 +579,8 @@
         margin-top: 25px;
     }
     .idc-location .idc-facts .idc-text-4 {
-        font-size: 14px;
-        line-height: 17px;
+        font-size: 12px;
+        line-height: 14px;
         margin-top: 5px;
     }
     .idc-location .idc-content.active {
@@ -880,6 +880,10 @@
         line-height: 17px;
         padding: 15px 0;
         text-align: center;
+    }
+    .idc-years .idc-button .idc-btn-text,
+    .idc-all .idc-button .idc-btn-text {
+        width: 66%;
     }
     .idc-years .idc-button,
     .idc-all .idc-button {
@@ -1222,7 +1226,11 @@
         top: 19%;
         width: 800px;
     }
-
+    .idc-location .idc-content.idc-4 .idc-count:last-child .idc-text-4 {
+        margin: 0 auto;
+        margin-top: 5px;
+        max-width: 200px;
+    }
     /* *****progs**** */
     .idc-progs .idc-container {
         padding-top: 50px;
@@ -1298,7 +1306,7 @@
     .idc-more .idc-text-2 {
         font-size: 14px;
         line-height: 20px;
-        max-width: 242px;
+        max-width: 240px;
     }
     .idc-progs .idc-more .idc-button {
         width: 100%;
@@ -1314,12 +1322,19 @@
         width: 76%;
     }
     .idc-swiper-4 .idc-swiper-pagination {
-        top: 210px;
+        top: 215px;
     }
 
     .idc-progs .idc-more .idc-swiper-button-next,
     .idc-progs .idc-more .idc-swiper-button-prev {
-        display: none;
+        width: 15px;
+        top: 225px;
+    }
+    .idc-progs .idc-more .idc-swiper-button-next {
+        right: 35%;
+    }
+    .idc-progs .idc-more .idc-swiper-button-prev {
+        left: 35%;
     }
 
     .idc-more .idc-close-btn {
@@ -1402,6 +1417,10 @@
         font-size: 14px;
         line-height: 20px;
         width: 100%;
+    }
+    .idc-years .idc-button .idc-btn-text,
+    .idc-all .idc-button .idc-btn-text {
+        width: calc(100% - 100px);
     }
     .idc-years .idc-button,
     .idc-all .idc-button {
